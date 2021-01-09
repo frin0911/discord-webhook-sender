@@ -1,0 +1,97 @@
+.input_group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 45%;
+}
+
+.input_field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1rem;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    transition: 0.2s;
+}
+.input_field::placeholder {
+    color: transparent;
+}
+.input_field:placeholder-shown ~ .input_label {
+    font-size: 1rem;
+    cursor: text;
+    top: 20px;
+}
+
+.input_label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+}
+
+.input_field:focus {
+    padding-bottom: 6px;
+    color: #9b9b9b;
+    transition: 0.2s;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #7289DA, #99AAB5);
+    border-image-slice: 1;
+}
+.input_field:focus ~ .input_label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #7289DA;
+    font-weight: 700;
+}
+
+/* reset input */
+.input_field:required, .input_field:invalid {
+    box-shadow: none;
+}
+
+textarea {
+    background-color: transparent;
+    color: white;
+    font-family: KoPubWorld, sans-serif;
+    font-size: 1em !important;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid #9b9b9b;
+    border-radius: 10px;
+    min-height: 110px !important;
+    outline: none;
+    transition: 0.2s;
+    resize: none;
+}
+
+textarea::placeholder {
+    color: #9b9b9b;
+    transition: 0.2s;
+}
+
+textarea:focus {
+    border: 1px solid #7289DA;
+    transition: 0.2s;
+    color: #9b9b9b;
+}
+
+textarea:focus::placeholder {
+    color: #7289DA;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.textarea {
+    margin-top: 50px;
+    width: 42%;
+}

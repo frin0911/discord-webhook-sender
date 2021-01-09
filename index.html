@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>디스코드 웹후크 전송기</title>
+    <link rel="stylesheet" href="textbox.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
+    <link rel="shortcut icon" href="https://discord.com/assets/f8389ca1a741a115313bede9ac02e2c0.svg">
+</head>
+<body>
+<div class="input_group field">
+    <input type=url class="input_field" placeholder="url" id="webhook_url" required>
+    <label for="webhook_url" class="input_label">웹후크 URL</label>
+</div>
+
+<div class="input_group field">
+    <input id="webhook_profile" type=url class="input_field" placeholder="url" onkeyup="getProfile();">
+    <label for="webhook_profile" class="input_label">프로필 사진 URL</label>
+</div>
+
+<div class="input_group field">
+    <input type=text class="input_field" placeholder="name" id="webhook_name" onkeyup="getName();">
+    <label for="webhook_name" class="input_label">웹후크 이름</label>
+</div>
+
+<div class="textarea">
+    <label><textarea id="textarea" placeholder="전송할 메시지 내용을 입력하세요." onkeyup="getText();"></textarea></label>
+</div>
+
+<p id="preview">미리보기</p>
+<div class="preview">
+    <div>
+        <img id="profile" src="https://discord.com/assets/6debd47ed13483642cf09e832ed0bc1b.png" alt="">
+        <a id="name">Captain Hook</a>
+        <div id="bot">봇</div>
+        <div id="time">
+            <script>getTime()</script>
+        </div>
+        <br>
+        <a id="text"></a>
+    </div>
+</div>
+
+<div class="buttons">
+    <div class="container">
+        <a onclick="send();" class="btn effect04" data-sm-link-text="클릭!" target="_blank"><span>전송</span></a>
+    </div>
+</div>
+
+
+</body>
+</html>

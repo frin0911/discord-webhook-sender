@@ -1,0 +1,105 @@
+@font-face {
+    font-family: "KoPubWorld";
+    src: url("font/KoPubWorld.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "KoPubBold";
+    src: url("font/KoPubBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "NanumBarunGothicLight";
+    src: url("font/NanumBarunGothicLight.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "SarabunRegular";
+    src: url("font/Sarabun-Regular.ttf") format("truetype");
+}
+
+
+body {
+    font-family: KoPubWorld, sans-serif;
+    background-color: #23272A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox {
+    margin-top: 5px;
+}
+
+#preview {
+    margin-top: 35px;
+    font-family: KoPubBold, sans-serif;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.preview {
+    background-color: #2C2F33;
+    padding: 20px;
+    width: 40%;
+    min-height: 60px;
+    border-radius: 15px;
+    transition: 0.2s;
+    border: 2px #2C2F33 solid;
+}
+
+.preview:hover {
+    background-color: #23272A;
+    border: 2px #2C2F33 solid;
+    transition: 0.2s;
+}
+
+#profile {
+    border-radius: 100px;
+    max-width: 50px;
+    float: left;
+}
+
+#name {
+    float: left;
+    margin-left: 21px;
+    color: white;
+    font-family: SarabunRegular, sans-serif;
+}
+
+#name:hover {
+    text-decoration: underline;
+}
+
+#bot {
+    float: left;
+    color: white;
+    margin-left: 4px;
+    font-size: 12px;
+    font-family: SarabunRegular, sans-serif;
+    padding: 0 3px 4px 3px;
+    background-color: #7289DA;
+    height: 12px;
+    border: #7289DA solid;
+    border-radius: 7px;
+}
+
+#time {
+    float: left;
+    margin-left: 8px;
+    margin-top: 4px;
+    color: #68767D;
+    font-family: SarabunRegular, sans-serif;
+    font-size: 12px;
+}
+
+#text {
+    float: left;
+    margin-left: 21px;
+    color: #D7D5CF;
+    font-size: 17px;
+    font-family: NanumBarunGothicLight, sans-serif;
+    margin-top: 5px;
+}
